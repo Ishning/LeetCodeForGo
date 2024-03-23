@@ -43,4 +43,11 @@ func isPalinddrome(x int) bool {
 		}
 		return x == rNumer //偶数最后两边都一样长度，直接 == 判断
 	}
+
+	//上面可以简写最后 return 返回时候用 || 或来比较,如下代码
+	for x > rNumer {
+		rNumer = x%10 + rNumer*10
+		x = x / 10
+	}
+	return x == rNumer/10 || x == rNumer
 }
