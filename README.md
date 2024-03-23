@@ -1,0 +1,2 @@
+# LeetCodeForGo
+LeetCood For go
